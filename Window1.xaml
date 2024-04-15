@@ -1,0 +1,54 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Регистрация в системе" Height="450" Width="800">
+    <StackPanel Background="Aqua">
+        <StackPanel Orientation="Vertical">
+            <Button x:Name="back" Content="Назад" Width="150" Height="50" Background="Purple" HorizontalAlignment="Right" Click="back_Click"/>
+            <TextBlock Height="70"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="150"/>
+                <Image Source="auth/prorile.png" Height="50"/>
+                <TextBlock Width="20"/>
+                <TextBox Width="400" Height="45" Name="lgm"   />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="150"/>
+                <Image Source="auth/mail.jpg" Width="50"/>
+                <TextBlock Width="20"/>
+                <TextBox Width="400" Name="eml" Height="45" TextChanged="eml_TextChanged_1" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="150"/>
+                <Image Source="auth/pass.png" Width="50"/>
+                <TextBlock Width="20"/>
+                <TextBox Width="400" Name="psww" Height="45" TextChanged="psww_TextChanged"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="150"/>
+                <Image Source="auth/pass.png" Width="50"/>
+                <TextBlock Width="20"/>
+                <TextBox Width="400" Name="pwd" Height="45"/>
+            </StackPanel>
+
+            <TextBlock Height="15"/>
+
+
+            <TextBlock x:Name="RedLine2" Visibility="Hidden"/>
+            <TextBlock x:Name="Vivod2"/>
+
+
+
+            <Button x:Name="auth" Content="Зарегистрироваться" Width="250" Height="50" FontSize="20" Background="Purple" Click="auth_Click"/>
+        </StackPanel>
+    
+    </StackPanel>
+    
+</Window>
